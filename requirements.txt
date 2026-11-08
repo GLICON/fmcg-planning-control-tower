@@ -1,0 +1,11 @@
+pandas>=2.2
+numpy
+duckdb
+pyarrow
+statsmodels
+scikit-learn
+lightgbm
+matplotlib
+jupyter
+python-dotenv
+anthropic
