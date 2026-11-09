@@ -1,11 +1,18 @@
+# Data pipeline
 pandas>=2.2
 numpy
-duckdb
 pyarrow
+sqlalchemy>=2.0
+pymssql
 statsmodels
 scikit-learn
 lightgbm
-matplotlib
-jupyter
 python-dotenv
+jupyter
+# Excel planning workbook
+openpyxl
+# Web app
+streamlit>=1.40
+plotly>=5.24
+# AI planning assistant
 anthropic
