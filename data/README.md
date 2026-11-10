@@ -13,5 +13,5 @@ To reproduce:
     git clone https://github.com/ciol-researchlab/SupplyGraph.git data/supplygraph
 
 The raw files are not stored in this repository. The pipeline loads them into
-**SAP-style tables** (MARA, MARC, MARD, VBAP, MSEG) in SQL Server. These are modelled on
+**SAP-style tables** (MARA, MARC, VBAP, MSEG) in SQL Server. These are modelled on
 SAP's table structures for demonstration; they are not a real SAP extract.
