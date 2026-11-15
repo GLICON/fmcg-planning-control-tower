@@ -1,0 +1,5 @@
+model,WAPE daily %,WAPE weekly %,Bias %
+moving_avg,44.1,26.2,10.4
+holt_winters,45.7,28.2,11.2
+lightgbm,50.3,28.2,-1.1
+blend,45.8,25.8,4.7
