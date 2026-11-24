@@ -1,0 +1,49 @@
+You are a senior material planner at an FMCG manufacturer.
+Write a short weekly planning memo for the Production and Procurement teams.
+Rules: use ONLY the numbers in the tables; never invent figures; label guesses "Possible cause".
+Structure: 
+1) Headline (2 sentences) 
+2) Top 5 actions with product, number and owner
+3) Forecast watch-list 
+4) Questions for Sales or the plant. Under 350 words, plain English.
+
+Network fill rate Jan-Aug 2023: 98.7%. Active products: 31, healthy: 23.
+
+PRODUCTS AT RISK:
+     product segment                           risk  fill_rate_pct  production_vs_orders_pct  avg_stock_28d  safety_stock  days_of_cover  lead_time_days
+  POV500M24P      BX Low cover (below safety stock)           99.9                      98.5           1775          1934            1.6            1.46
+  POV005L04P      CY Low cover (below safety stock)           99.1                      98.7            571           598            1.9            2.26
+   MAR02K12P      CX Service risk (fill rate < 95%)           88.0                      85.2            545           417            4.3            2.31
+    MASR025K      CY Service risk (fill rate < 95%)           85.8                      83.5            392           463            2.6            1.91
+    MAHS025K      CY                    Excess risk           96.9                     151.5           2670           173           63.8            2.91
+ATWWP002K12P      CY Service risk (fill rate < 95%)           71.0                      71.3            154           415            6.8           30.00
+    MAC1K25P      CZ Low cover (below safety stock)           98.2                     105.0             18            71            3.9           12.71
+    MAP1K25P      CZ Low cover (below safety stock)           98.0                     102.5             14           572            1.4           30.00
+
+FORECAST WATCH-LIST (blend forecast, last 4 weeks):
+   product  actual_units  wape_pct  bias_pct              flag
+SOS005L04P      121284.0      23.9      23.9 Drifting - review
+POP001L12P       22808.0      38.4     -37.5 Drifting - review
+SOS003L04P       19185.0      35.9      35.9 Drifting - review
+ ATN02K12P       17935.0      21.0     -21.0 Drifting - review
+ MAR01K24P       15943.0      32.3      32.3 Drifting - review
+POP500M24P        8201.0      36.1      22.9 Drifting - review
+POV005L04P        6680.0      33.9      33.9 Drifting - review
+SOS250M48P        5696.0      21.9     -21.9 Drifting - review
+  MASR025K        4722.0      51.5     -51.5 Drifting - review
+POP002L09P        4380.0      26.0      26.0 Drifting - review
+
+BIGGEST DEMAND ANOMALIES (Isolation Forest):
+      date    product product_group  ordered_units  excess_units  type
+2023-02-14 SOS005L04P             S        29251.0       19645.0 Spike
+2023-02-14 SOS001L12P             S        28339.0       17317.0 Spike
+2023-03-09 SOS005L04P             S        28774.0       16403.0 Spike
+2023-02-05 SOS005L04P             S        24629.0       16320.0 Spike
+2023-02-05 SOS001L12P             S        25394.0       14983.0 Spike
+2023-03-19 SOS002L09P             S        20881.0       14547.0 Spike
+2023-03-12 SOS005L04P             S        25024.0       12909.0 Spike
+2023-01-14 SOS001L12P             S         1508.0      -12325.0  Drop
+2023-03-12 SOS001L12P             S        23725.0       12080.0 Spike
+2023-02-01 POP001L12P             P        12016.0       10868.0 Spike
+
+Write the memo.
